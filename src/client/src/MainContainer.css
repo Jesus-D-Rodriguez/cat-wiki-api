@@ -1,0 +1,15 @@
+.main-cat-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border-radius: calc(8px + 2.2%);
+    background-color: #E3E1DC;
+    overflow: hidden;
+}
+
+.main-cat-container-img {
+    background-image: url("../images/HeroImagelg.png");
+    background-size: 100% 100%;
+    background-clip: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

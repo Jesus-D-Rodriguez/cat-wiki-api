@@ -5,3 +5,8 @@
     display: grid;
     grid-template-rows: 58% 42%;
 }
+
+.container-1 {
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
