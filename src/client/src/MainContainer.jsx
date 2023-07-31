@@ -1,5 +1,6 @@
 import React from "react";
 import "./MainContainer.css"
+import SearchBar from "./SearchBar";
 
 function MainContainer () {
     return <div className="main-cat-container">
@@ -7,10 +8,15 @@ function MainContainer () {
             <div className="main-cat-container-img-1">
                 <div className="inside-cat-container-img-1">
                     <div>
-                        <div className="logo-inverse-container">Cat wiki
+                        <div className="logo-inverse-container">
+                            CatWiki
                             <img src="../images/invertido.png" alt="" />
                         </div>
                         <div><p>Get to know more about your cat breed</p></div>
+                        
+                    </div>
+                    <div>
+                        <SearchBar></SearchBar>
                     </div>
                 </div>
 
