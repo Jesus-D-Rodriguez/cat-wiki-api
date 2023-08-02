@@ -4,6 +4,8 @@
     border-radius: calc(8px + 2.2%);
     background-color: #E3E1DC;
     overflow: hidden;
+    height: 650px;
+    min-height: 450px;
 }
 
 .main-cat-container-img {
@@ -11,14 +13,14 @@
     background-size: 100% 100%;
     background-clip: border-box;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
 }
 
 .logo-inverse-container  {
     max-width: 100%; 
     max-height: 50%; 
     font-family: 'Mystery Quest', cursive;
-    font-size: 1.7rem;
+    font-size: 2.4rem;
     color:#FFFFFF;
     display: flex;
     justify-content: left;
@@ -36,7 +38,7 @@
 
 .main-cat-container-img-1 p {
     color: #FFFFFF;
-    font-size: 0.6rem;
+    font-size: 1rem;
     text-align: left;
     width: 70%;
 }
@@ -45,7 +47,7 @@
     width: auto;
     height: auto;
     padding-left: 3%;
-    max-width: 20%;
+    max-width: 16%;
    /** position: absolute; 
     width: 100%; 
     height: 100%; */
@@ -57,4 +59,22 @@
     margin: auto auto;
     display: grid;
     grid-template-rows: 55% 45%;
+}
+
+.most-searched {
+    width: 87.5%;
+    height: 80%;
+    margin: auto;
+    margin-top: 1.8%;
+    display: grid;
+    grid-template-rows: 10% 25% 65%;
+}
+
+.most-searched p {
+    text-align: left;
+}
+
+.most-searched h2 {
+    width: 50%;
+    text-align: left;
 }

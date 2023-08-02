@@ -5,8 +5,15 @@
 }
 
 .logo-container {
-    display: inline-block;
-    width: auto;
+    display: flex;
+    width: 10%;
     margin-left: 0;
-    height: 80%;
+    justify-content: left;
+    /*height: 80%;*/
+
+}
+
+.logo-container img {
+    width: 85%;
+    height: auto;
 }

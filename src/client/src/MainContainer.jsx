@@ -27,7 +27,14 @@ function MainContainer () {
             </div>
             <div className="main-cat-container-img-2"></div>
         </div>
-        <div></div>
+        <div className="main-cat-container-most-searched">
+
+            <div className="most-searched">     
+                <div>  <p>Most searched breeds</p></div>
+                <div> <h2>66+ Breeds For you to discover</h2></div>
+                <div></div>
+            </div>
+        </div>
     </div>
 
 }
