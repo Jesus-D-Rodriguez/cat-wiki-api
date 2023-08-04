@@ -30,9 +30,30 @@ function MainContainer () {
         <div className="main-cat-container-most-searched">
 
             <div className="most-searched">     
-                <div>  <p>Most searched breeds</p></div>
-                <div> <h2>66+ Breeds For you to discover</h2></div>
-                <div></div>
+                <div className="most-searched-breed-2">  
+                    <p>Most searched breeds</p>
+                    <div class="mi-rectangulo"></div>
+
+                </div>
+                <div className="most-searched-discover"> 
+                    <div className="breeds-to-discover">
+                        <h2>66+ Breeds For you to discover</h2>
+                    </div>
+              
+                    <div className="see-more">
+                        <a href="#">
+                        <div className="see-more-2">
+                            <p>SEE MORE</p> <img src="../images/arrow-right-alt_117700.svg" alt=""/> 
+                        </div>
+                        </a>
+                    </div>
+
+                
+                </div>
+                <div>
+                    xd
+                    
+                </div>
             </div>
         </div>
     </div>
