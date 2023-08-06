@@ -154,12 +154,27 @@
     border-radius: 25px 25px 25px 25px; /* Aplica bordes redondeados a los lados izquierdo y derecho */
     text-align: center; /* Centra el contenido del rectángulo horizontalmente */
     line-height: 50px; /* Centra el contenido del rectángulo verticalmente */
+    margin-left: 0.09%;
 
 
-  }
+}
 
-  .most-searched-breed-2 p {
+.most-searched-breed-2 p {
     margin-bottom: 0;
     margin-top: 0.3%;
     font-weight: 500;
-  }
+}
+
+.rounded-div {
+    border-radius: 10px; /* Puedes ajustar el valor para obtener el redondeo deseado */
+    background-color:#DEC68B; /* Color de fondo opcional para visualizar mejor el div */
+    padding: 10px; /* Agregar espaciado interno opcional para separar el contenido del borde */
+    width: 15px;
+    height: 110px;
+}
+
+.most-searched-photos {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

@@ -12,3 +12,8 @@
     display: grid;
     grid-template-rows: 10% 90%;
 }
+
+.container-2 {
+    display: grid;
+    grid-template-rows: 85% 15%;
+}

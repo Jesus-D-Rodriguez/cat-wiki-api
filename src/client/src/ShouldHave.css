@@ -1,0 +1,11 @@
+.should-have {
+    width: 87.5%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 48% 52%;
+}
+
+.should-have .mi-rectangulo {
+    width: 60px;
+}

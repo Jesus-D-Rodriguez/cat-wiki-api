@@ -50,8 +50,8 @@ function MainContainer () {
 
                 
                 </div>
-                <div>
-                    xd
+                <div className="most-searched-photos">
+                    <div class="rounded-div"></div>
                     
                 </div>
             </div>
