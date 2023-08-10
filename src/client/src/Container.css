@@ -6,14 +6,16 @@
     margin: auto;
     display: grid;
     grid-template-rows: 58% 42%;
+    min-height: 1720px;
 }
 
 .container-1 {
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 5% 95%;
 }
 
 .container-2 {
     display: grid;
-    grid-template-rows: 85% 15%;
+    grid-template-rows: 90% 10%;
+    padding-top: 10%;
 }

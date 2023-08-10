@@ -4,8 +4,58 @@
     margin: auto;
     display: grid;
     grid-template-columns: 48% 52%;
+    color: #291507;
 }
 
 .should-have .mi-rectangulo {
     width: 60px;
+}
+
+.should-have-1 {
+    text-align: left;
+    height: 60%;
+    margin: auto;
+    
+
+}
+
+.should-have-1 a {
+    display: flex;
+    margin-top: 13%;
+    color: #29150799;
+    align-items: center;
+}
+
+
+.should-have-1 a:hover {
+    color: #29150799;
+}
+
+.should-have-1 img {
+    filter: invert(53%) sepia(5%) saturate(950%) hue-rotate(343deg) brightness(85%) contrast(91%);
+    width: 12px;
+    height: 6%;
+    padding-left: 6.25px;
+}
+
+.should-have-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.image-2 {
+    width: 100%;
+    height: auto;
+}
+
+.image-1 {
+    width: 70%;
+    height: auto;
+    margin-right: 0;
+    float: right;
+}
+
+.image-3 {
+    width: 85%;
+    height: auto;
 }

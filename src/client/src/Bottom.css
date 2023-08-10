@@ -1,3 +1,49 @@
 .bottom {
     background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+}
+
+.bottom-container {
+    display: flex;
+    width: 87.5%;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.bottom-container img {
+    filter: brightness(0) invert(1);
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 50px;
+
+}
+
+.bottom-container p {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bottom-container a{
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.bottom-container a:hover {
+    /*color: white;*/
+}
+
+.bottom-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
 }
