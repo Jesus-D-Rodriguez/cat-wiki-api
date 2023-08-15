@@ -32,27 +32,50 @@
   
   #searchQueryInput {
     width: 100%;
-    height: 50px;
+    height: 85px;
     background: #f5f5f5;
     outline: none;
     border: none;
-    border-radius: 1.625rem;
-    padding: 0 3rem 0 1rem;
-    font-size: 0.8rem;
+    border-radius: 2.625rem;
+    padding: 0 3rem 0 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
   }
   
   #searchQuerySubmit {
-    width: 3.5rem;
-    height: 2.8rem;
-    margin-left: -2.85rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-left: -4.3rem;
     background: none;
     border: none;
     outline: none;
     display: flex;
     align-items: center;
   }
+
+  #searchQuerySubmit svg {
+    height: 35px;
+    width: 35px;
+  }
   
   #searchQuerySubmit:hover {
     cursor: pointer;
+  }
+
+  @media (max-width:1650px) {
+    #searchQueryInput {
+      height: 65px;
+    }
+  }
+
+  @media (max-width:1650px) {
+    #searchQueryInput {
+      height: 55px;
+
+      font-size: 0.8rem;
+    }
+
+    #searchQuerySubmit {
+      margin-left: -3.7rem;
+    }
   }

@@ -65,6 +65,7 @@
 .inside-cat-container-img-1 p {
     margin-top: 2.5%;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .most-searched {
@@ -79,6 +80,7 @@
 
 .most-searched p {
     text-align: left;
+    font-size: 1.7rem;
 }
 
 .most-searched h2 {
@@ -147,11 +149,13 @@
 .breeds-to-discover h2 {
     display: inline;
     line-height: 1;
+    font-size: 3.2rem;
 }
 
 
 .mi-rectangulo {
-    width: 45px;
+    width: 70px;
+    margin-top: 8px;
     height: 3px;
     background-color: #4D270C; /* Cambia #007bff por el color que desees */
     border-radius: 25px 25px 25px 25px; /* Aplica bordes redondeados a los lados izquierdo y derecho */
@@ -166,6 +170,16 @@
     margin-bottom: 0;
     margin-top: 0.3%;
     font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.see-more a {
+    font-size: 1.4rem;
+}
+
+.see-more img {
+    width: 25px;
+    margin-bottom: 3.8%;
 }
 
 .rounded-div {
@@ -187,8 +201,8 @@
 
 .img-container {
     /*width: 20%;*/
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
     font-weight: 600;
 }
 
@@ -223,20 +237,234 @@
     background-color:#DEC68B; /* Color de fondo opcional para visualizar mejor el div */
      /* Agregar espaciado interno opcional para separar el contenido del borde */
     width: 10px;
-    height: 140px;
+    height: 180px;
     right: 100%;
-    top: 30px;
+    top: 45px;
 
 
 }
 
 #first-image {
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
 
 
 }
 
 .main-cat-container-most-searched {
     color: #291507;
+}
+
+@media (max-width: 1700px) {
+    #first-image {
+        height: 260px;
+        width: 260px;
+    }
+
+    .img-container {
+        height: 260px;
+        width: 260px;
+    }
+
+    #first-image::before {
+        top: 50px;
+        height: 150px;
+    }
+
+    .see-more a {
+        font-size: 1.2rem;
+    }
+
+    .see-more img {
+        width: 19px;
+    }
+
+    .most-searched-photos p {
+        font-size: 1.4rem;
+    }
+
+    .mi-rectangulo {
+        margin-top: 6px;
+    }
+
+    
+}
+
+@media (max-width: 1650px) {
+    .most-searched-discover h2 {
+        font-size: 2.4rem;
+    }
+    
+    .most-searched-photos p {
+        font-size: 1.1rem;
+    }
+
+    .see-more p {
+        font-size: 1.5rem;
+    }
+
+
+    .inside-cat-container-img-1 p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1550px) {
+    .img-container {
+        height: 220px;
+        width: 220px;
+    }
+
+    #first-image {
+        height: 220px;
+        width: 220px;
+    }
+
+    #first-image::before {
+        top: 40px;
+        height: 140px;
+    }
+    .most-searched-discover h2 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .img-container {
+        height: 200px;
+        width: 200px;
+    }
+
+    #first-image {
+        height: 200px;
+        width: 200px;
+    }
+
+    #first-image::before {
+        top: 30px;
+        height: 140px;
+    }
+        
+    .see-more a {
+        font-size: 0.9rem;
+    }
+
+    .see-more img {
+        width: 20px;
+        margin-bottom: 4.8%;
+    }
+
+    .most-searched-breed-2 p {
+        font-size: 1.3rem;
+    }
+
+
+
+}
+
+
+
+/*@media (max-width: 1410px) {
+    .img-container {
+        height: 200px;
+        width: 200px;
+    }
+
+    #first-image {
+        height: 200px;
+        width: 200px;
+    }
+} */
+
+@media (max-width: 1250px) {
+    .main-cat-container {
+        min-height: 800px;
+    }
+
+    .most-searched-photos p {
+        font-size: 1rem;
+    }
+    .most-searched-discover h2 {
+        font-size: 2rem;
+    }
+
+    .see-more p {
+        font-size: 1rem;
+    }
+
+    .see-more img {
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .main-cat-container {
+        min-height: 700px;
+    }
+
+    .img-container {
+        height: 180px;
+        width: 180px;
+    }
+
+    #first-image {
+        height: 180px;
+        width: 180px;
+    }
+
+    #first-image::before {
+        top: 27.5px;
+        height: 135px;
+    }
+
+    .most-searched-discover h2 {
+        font-size: 1.75rem;
+    }
+
+    .most-searched-photos p {
+        font-size: 0.85rem;
+    }
+    
+}
+
+@media (max-width: 920px) {
+    .img-container {
+        height: 165px;
+        width: 165px;
+    }
+
+    #first-image {
+        height: 165px;
+        width: 165px;
+    }
+
+    #first-image::before {
+        top: 20px;
+        height: 125px;
+    }
+        
+}
+
+@media (max-width: 850px) {
+    .img-container {
+        height: 155px;
+        width: 155px;
+    }
+
+    #first-image {
+        height: 155px;
+        width: 155px;
+    }
+
+    #first-image::before {
+        top: 15px;
+        height: 125px;
+    }   
+}
+
+
+@media (max-width: 768px) {
+    .main-cat-container {
+        grid-template-rows: 20% 80%;
+      }
 }

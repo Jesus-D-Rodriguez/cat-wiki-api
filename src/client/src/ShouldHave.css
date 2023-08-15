@@ -19,6 +19,14 @@
 
 }
 
+.should-have-1 h2 {
+    font-size: 2.5rem;
+}
+
+.should-have p {
+    font-size: 1.2rem;
+}
+
 .should-have-1 a {
     display: flex;
     margin-top: 13%;
@@ -58,4 +66,88 @@
 .image-3 {
     width: 85%;
     height: auto;
+}
+
+.should-have-1 a{
+    font-size: 1.7rem;
+
+}
+
+.should-have-1 img {
+    width: 27px;
+}
+
+.should-have-1 h2 {
+    width: 80%;
+    /*width: fit-content;*/
+} 
+
+@media (max-width: 1700px) {
+    .should-have-1 a {
+        font-size: 1.4rem;
+    }
+
+    .should-have-1 h2 {
+        font: 2.5rem;
+    }
+
+    .should-have-1 img {
+        width: 20px;
+    }
+}
+
+@media (max-width: 1650px) {
+    .should-have-1 {
+        margin-top: 20%;
+    }
+    .should-have-1 a {
+        font-size: 1.3rem;
+        margin-top: 12%;
+    }
+}
+@media (max-width: 1550px) {
+    .should-have p {
+        font-size: 1rem;
+    }
+
+    .should-have-1 h2 {
+        font: 2.4rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .should-have-1 a {
+        font-size: 1rem;
+        margin-top: 12%;
+    }
+}
+
+@media (max-width: 1250px) {
+   /* .should-have-1 {
+        margin-top: 10%;
+    }*/
+
+    .should-have-1 h2 {
+        font-size: 2rem;
+    }
+
+    .should-have-1 a{
+        margin-top: 8%;
+    }
+
+    .should-have-1 p{
+        font-size: 0.8rem;
+    }
+
+    .inside-cat-container-img-1 p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .mi-rectangulo {
+        margin-top: 3px;
+        width: 60px;
+    }
+
 }
