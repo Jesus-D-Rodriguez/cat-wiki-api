@@ -79,3 +79,10 @@
       margin-left: -3.7rem;
     }
   }
+
+
+  @media(max-width: 768px) {
+    .wrapper {
+      margin-top: 0;
+    }
+  }

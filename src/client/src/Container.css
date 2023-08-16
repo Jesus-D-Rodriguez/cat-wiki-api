@@ -112,10 +112,11 @@
   @media (max-width:768px) {
     .container {
         min-width: 550px;
+        min-height: 2670px;
     }
 
     .container-2 {
-      padding-top: 2.5%;
+      padding-top: 0;
     }
   }
 

@@ -139,9 +139,7 @@
         font-size: 0.8rem;
     }
 
-    .inside-cat-container-img-1 p {
-        font-size: 1rem;
-    }
+
 }
 
 @media (max-width: 1150px) {
@@ -150,4 +148,33 @@
         width: 60px;
     }
 
+    .should-have-1 h2 {
+        font-size: 1.7rem;
+    }
+
+
+
+}
+
+@media (max-width: 1024px) {
+    .should-have-1 p {
+        font-size: 0.7rem;
+    }
+
+    .should-have-1 {
+        margin-top: 15%;
+    }
+} 
+
+@media (max-width: 800px) {
+    .should-have-1 {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .should-have {
+        grid-template-rows: 35% 65%;
+        grid-template-columns: none;
+    }
 }

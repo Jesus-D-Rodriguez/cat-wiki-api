@@ -13,7 +13,7 @@ function MainContainer () {
                             <img src="../images/invertido.png" alt="" />
 
                         </div>
-                        <div><p>Get to know more about your cat breed</p></div>
+                        <div className="get"><p>Get to know more about your cat breed</p></div>
                         
                     </div>
                     <div>
@@ -53,27 +53,31 @@ function MainContainer () {
                 </div>
                 
                 <div className="most-searched-photos">
-                
-                    <div className="img-container">
+                  
+
+                    
+                    <div className="img-container" id="left">
                         <div id="first-image">
                         <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" alt="" />
                         </div>
                         <p>Bengal</p>
                     </div>
-                    <div className="img-container">
+                    <div className="img-container" id="right">
                         <img src="https://cdn2.thecatapi.com/images/9ha.jpg" alt="" />
                         <p>Savannah</p>
                         
                     </div>
-                    <div className="img-container">
+                  
+                
+                    <div className="img-container" id="left">
                         <img src="https://cdn2.thecatapi.com/images/cko.jpg" alt="" />
                         <p>Norwegian Forest Cat</p>
                     </div>
-                    <div className="img-container">
+                    <div className="img-container" id="right">
                         <img src="https://cdn2.thecatapi.com/images/251.jpg" alt="" />
                         <p>Selkirk Rex</p>
                     </div>
-                    
+           
                     
                 </div>
             </div>

@@ -395,6 +395,9 @@
     .see-more img {
         margin-bottom: 3%;
     }
+    .inside-cat-container-img-1 p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -426,6 +429,8 @@
     }
     
 }
+
+
 
 @media (max-width: 920px) {
     .img-container {
@@ -467,4 +472,90 @@
     .main-cat-container {
         grid-template-rows: 20% 80%;
       }
+
+      .inside-cat-container-img-1 {
+        height: 90%;
+      }
+
+      .inside-cat-container-img-1 p {
+        font-size: 0.7rem;
+    }
+
+      .logo-inverse-container {
+        font-size: 1rem;
+      }
+
+      .get {
+        width: 100%;
+      }
+
+      #first-image::before {
+        top: 95px;
+        height: 180px;
+        width: 7px;
+    }   
+
+    .img-container {
+        height: 100%;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .img-container img {
+        height: 250px;
+        width: 250px;
+    }
+
+    #first-image {
+        height: 250px;
+        width: 250px;
+    }
+
+    .most-searched-photos {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+
+    #right {
+        display: grid;
+        justify-content: flex-end;
+    }
+
+    #left {
+        display: grid;
+        justify-content: flex-start;
+    }
+
+    .most-searched-photos p {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    
+    .main-cat-container {
+        height: 85%;
+    }
+    .most-searched-breed-2 {
+        margin-top: 5%;
+    }
+
+ 
 }
+
+
+@media (max-width: 640px) {
+    .img-container img {
+        height: 220px;
+        width: 220px;
+    }
+
+    #first-image {
+        height: 220px;
+        width: 220px;
+    }
+
+    #first-image::before {
+        top: 80px;
+    }
+}
+

@@ -58,3 +58,25 @@
     }
 }
 
+@media (max-width:1150px) {
+    .bottom-line p {
+        font-size: 0.85rem;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .bottom-line {
+
+        display: flow-root;
+    }
+    .bottom-line img {
+        max-height: 35px;
+        display: block;
+    }
+    .bottom-line p {
+        display: block;
+        justify-content: center;
+    }
+}
