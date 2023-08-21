@@ -85,4 +85,7 @@
     .wrapper {
       margin-top: 0;
     }
+    .should-have-1 p::placeholder {
+      content: "Search";
+    }
   }

@@ -7,7 +7,7 @@ function ShouldHave () {
         <div className="should-have-1"> 
             <div className="mi-rectangulo"></div> 
             <h2 style={{textAlign:"left"}}>Why should you have a cat?</h2> 
-            <p style={{textAlign:"justify", width:"80%"}}>Having a cat around you can actually trigger the release of calming chemicals in your body which lower your stress and anxiety leves</p>
+            <p style={{textAlign:"justify"}}>Having a cat around you can actually trigger the release of calming chemicals in your body which lower your stress and anxiety leves</p>
             <div><a href="#">READ MORE <img src="../images/arrow-right-alt_117700.svg" alt="" /></a> </div>
         </div>
         <div className="should-have-2">

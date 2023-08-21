@@ -117,6 +117,7 @@
 
     .container-2 {
       padding-top: 0;
+      margin-top: -10%;
     }
   }
 
@@ -127,3 +128,22 @@
     }
   }
 
+
+  @media(max-width: 640px) {
+    .container {
+      min-height: 2430px;
+    }
+
+    .container-2 {
+      margin-top: -15%;
+    }
+    
+  }
+
+  @media(max-width: 640px) {
+    .container {
+      min-height: 2300px;
+    }
+
+    
+  }
