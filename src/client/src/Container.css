@@ -147,3 +147,23 @@
 
     
   }
+
+
+  @media(max-width: 535px) {
+    .container {
+      min-height: 2100px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .container {
+      min-height: 1900px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .container {
+      min-height: 1600px;
+    }
+
+  }

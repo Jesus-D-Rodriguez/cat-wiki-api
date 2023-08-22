@@ -594,6 +594,10 @@
     .most-searched-discover {
         margin-top: -7.5%;
     }
+
+    .most-searched-discover h2 {
+        margin: auto;
+    }
 }
 
 
@@ -611,6 +615,14 @@
     #first-image::before {
         height: 140px;
     }
+
+    .most-searched-breed-2 p {
+        font-size: 1.1rem;
+    }
+
+    .mi-rectangulo{
+        height: 2.5px;
+    }
 }
 
 
@@ -627,6 +639,27 @@
     #first-image::before {
         height: 120px;
     }
+
+    .most-searched-discover h2 {
+        font-size: 1.2rem;    
+    }
+
+    .see-more p {
+        font-size: 0.85rem;
+    }
+
+    .see-more img  {
+        margin-bottom: 1.95%;
+    }
+
+    .should-have-1 p {
+        font-size: 0.9rem;
+    }
+
+    .most-searched-photos p {
+        font-size: 0.85rem;
+    }
+    
 }
 
 
@@ -645,6 +678,15 @@
         height: 100px;
         width: 6px;
     }
+
+    .inside-cat-container-img-1 p {
+        font-size: 0.65rem;
+    }
+
+    .most-searched-breed-2 p  {
+        font-size: 0.9rem;
+    }
+    
 }
 
 
