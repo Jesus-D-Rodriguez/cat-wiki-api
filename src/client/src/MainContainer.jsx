@@ -1,8 +1,10 @@
 import React from "react";
 import "./MainContainer.css"
 import SearchBar from "./SearchBar";
+import Autocomplete from '@mui/material/Autocomplete';
 
 function MainContainer () {
+    const options = ['Option 1', 'Option 2'];
     return <div className="main-cat-container">
         <div className="main-cat-container-img">
             <div className="main-cat-container-img-1">
