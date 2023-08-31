@@ -46,7 +46,8 @@ function SearchBar() {
   const handleOptionSelect = (event, selectedOption) => {
     if (selectedOption) {
       // Redirect using useNavigate
-      navigate(`/cat/${selectedOption}`);
+      navigate(`/cat/${encodeURIComponent(selectedOption)}`);
+      console.log( "Selected: " + selectedOption);
     }
   };
 
@@ -58,11 +59,13 @@ function SearchBar() {
             display: 'inline-block',
             width: "100%",
           }}
+          
           id="searchQueryInput"
           options={options}
           value={searchValue}
           onChange={handleOptionSelect}
           onInputChange={handleInputChange}
+          //renderOption={(option) => <li key={option}>{option}</li>}
           renderInput={(params) => (
             <div ref={params.InputProps.ref}>
               <input

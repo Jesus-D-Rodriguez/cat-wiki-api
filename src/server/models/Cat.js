@@ -4,6 +4,7 @@ const catSchema = new mongoose.Schema({
     id: String,
     name: String,
     cfa_url: String,
+    description: String,
     temperament: String,
     origin: String,
     life_span: String,
@@ -15,6 +16,8 @@ const catSchema = new mongoose.Schema({
     health_issues: String,
     social_needs: String,
     stranger_friendly: String,
+    reference_image_id: String,
+    image_url: String
 })
 
 const Cat = mongoose.model("Cat", catSchema);

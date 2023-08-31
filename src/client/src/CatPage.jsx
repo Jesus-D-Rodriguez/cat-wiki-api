@@ -1,20 +1,54 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState } from "react";
 import "./Container.css"
 import "./CatPage.css";
 import Top from "./Top";
 import Bottom from "./Bottom";
+import axios from "axios";
+import { useParams } from 'react-router-dom';
 
-function CatPage () {
+
+function CatPage (props) {
+
+    //const catName = decodeURIComponent(props.catName);
+    const {catName} = useParams();
+    const [catData, setCatData] = useState([]);
+
     useEffect(() => {
-        // Cambiar la altura del body
+
+        axios.get(`http://localhost:3000/cat/${catName}`)
+          .then(response => {
+            setCatData(response.data);
+            console.log(response.data)
+          })
+          .catch(error => {
+            console.error('Error fetching cat data:', error);
+          });
+
+      }, [catName]);
+
+
+  useEffect(() => {
+    
+    axios.get(`http://localhost:3000/cat/${catName}`)
+    .then(response => {
+      setCatData(response.data);
+    })
+    .catch(error => {
+      console.error('Error fetching cat data:', error);
+    });
+
+    console.log("CatData" + catData);
+
         document.body.style.height = '170vh';
         document.documentElement.style.height = '100vh';
     
-        // Restaurar la altura cuando el componente se desmonte
+
         return () => {
           document.body.style.height = 'auto';
           document.documentElement.style.height = 'auto';
         };
+
+
       }, []);
     return (<div className="container" id="container-cat-page">
         <div className="container-1">
@@ -22,19 +56,19 @@ function CatPage () {
             <div className="container-1-container">
                 <div className="container-1-image">                    
                     <div className="img-container" id="left">
-                        <img src="https://cdn2.thecatapi.com/images/cko.jpg" alt="" />
+                        <img src={catData.image_url} alt="" />
 
                     </div>
 
                     </div>
                 <div> 
                     <div className="container-1-traits">
-                        <h2>Bengal</h2>
-                        <p>Bengals are a lot of fun to live with, but they're definitely not the cat for everyone, or for first-time cat owners. Extremely intelligent, curious and active, they demand a lot of interaction and woe betide the owner who doesn't provide it.</p>
+                        <h2>{catData.name}</h2>
+                        <p>{catData.description}</p>
                        
-                       <div><p className="traits"> Temperament:</p>  <p className="trait">Alert, Agile, Energetic, Demanding, Intelligent</p></div>
-                        <div><p className="traits">Origin:</p> <p className="trait">United States</p></div>
-                        <div><p className="traits">Life Span:</p> <p className="trait">12 - 15 years</p></div>
+                       <div><p className="traits"> Temperament:</p> {catData.temperament} <p className="trait"> </p></div>
+                        <div><p className="traits">Origin:</p> <p className="trait">{catData.origin}</p></div>
+                        <div><p className="traits">Life Span:</p> <p className="trait">{catData.life_span} years</p></div>
                         <div><p className="traits">Adaptability:</p> <div className="bar"></div><div className="bar"></div><div className="bar"></div><div className="bar"></div><div className="bar"></div></div>
                         <div><p className="traits">Affection level:</p> <div className="bar"></div><div className="bar"></div><div className="bar"></div><div className="bar"></div><div className="bar"></div> </div>
                         <div><p className="traits">Child friendly:</p> <div className="bar"></div><div className="bar"></div><div className="bar"></div><div className="bar"></div><div className="bar"></div></div>
