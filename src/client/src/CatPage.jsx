@@ -39,6 +39,7 @@ function CatPage (props) {
 
     console.log("CatData" + catData);
 
+
         document.body.style.height = '170vh';
         document.documentElement.style.height = '100vh';
     
@@ -92,23 +93,23 @@ function CatPage (props) {
             <div className="container-2-photos-row">
             <div className="img-container" id="left">
                         <div id="first-image">
-                        <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" alt="" />
+                        <img src={catData.images_1} alt="" />
                         </div>
 
             </div>
                     <div className="img-container" id="right">
-                        <img src="https://cdn2.thecatapi.com/images/9ha.jpg" alt="" />
+                        <img src={catData.images_2} alt="" />
 
                         
                     </div>
                   
                 
                     <div className="img-container" id="left">
-                        <img src="https://cdn2.thecatapi.com/images/cko.jpg" alt="" />
+                        <img src={catData.images_3} alt="" />
 
                     </div>
                     <div className="img-container" id="right">
-                        <img src="https://cdn2.thecatapi.com/images/251.jpg" alt="" />
+                        <img src={catData.images_4} alt="" />
 
                     </div>
             </div>
@@ -117,23 +118,23 @@ function CatPage (props) {
             
             <div className="img-container" id="left">
                         <div id="first-image">
-                        <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" alt="" />
+                        <img src={catData.images_5} alt="" />
                         </div>
 
             </div>
                     <div className="img-container" id="right">
-                        <img src="https://cdn2.thecatapi.com/images/9ha.jpg" alt="" />
+                        <img src={catData.images_6} alt="" />
 
                         
                     </div>
                   
                 
                     <div className="img-container" id="left">
-                        <img src="https://cdn2.thecatapi.com/images/cko.jpg" alt="" />
+                        <img src={catData.images_7} alt="" />
 
                     </div>
                     <div className="img-container" id="right">
-                        <img src="https://cdn2.thecatapi.com/images/251.jpg" alt="" />
+                        <img src={catData.images_8} alt="" />
 
                     </div>
         </div>

@@ -17,7 +17,15 @@ const catSchema = new mongoose.Schema({
     social_needs: String,
     stranger_friendly: String,
     reference_image_id: String,
-    image_url: String
+    image_url: String,
+    images_1: String,
+    images_2: String,
+    images_3: String,
+    images_4: String,
+    images_5: String,
+    images_6: String,
+    images_7: String,
+    images_8: String
 })
 
 const Cat = mongoose.model("Cat", catSchema);

@@ -30,16 +30,65 @@ connectDB().then(() => {
       const retryDelay = 1000;
       if (breed.reference_image_id) {
         let retries = 0;
-        let image;
+
         
         while (retries < maxRetries) {
           try {
+
+            let image;
+
+            let response_images;
             console.log("Referencia image id:", breed.reference_image_id);
+            const API_KEY = "live_GO6QtjM1mtzVMLBqc6kwZmzWvCZZnIl6xrdM9xR0mtOWcDz4pkWZMa7HZwDuJ8Xa";
+            const n_images = 8;
+            const images_url_1 = `https://api.thecatapi.com/v1/images/search?limit=${n_images}&breed_ids=${breed.id}&api_key=${API_KEY}`;
+
     
             const response2 = await axios.get(`https://api.thecatapi.com/v1/images/${breed.reference_image_id}`);
+            const response3 = await axios.get(images_url_1);
+            response_images = response3.data;
+            console.log("Response 3 " + response3.data.length + " "+ images_url_1);
             image = response2.data;
+            
             console.log("image url: ",image.url);
-            break; // Salir del bucle si la solicitud tiene éxito
+
+            if (image && (response_images.length >= 8)) {
+              const newCat = new Cat({
+                id: breed.id,
+                name: breed.name,
+                cfa_url: breed.cfa_url,
+                description: breed.description,
+                temperament: breed.temperament,
+                origin: breed.origin,
+                life_span: breed.life_span,
+                adaptability: breed.adaptability,
+                affection_level: breed.affection_level,
+                child_friendly: breed.child_friendly,
+                grooming: breed.grooming,
+                inteligence: breed.inteligence,
+                health_issues: breed.health_issues,
+                social_needs: breed.social_needs,
+                stranger_friendly: breed.stranger_friendly,
+                reference_image_id: breed.reference_image_id,
+                image_url: image.url,
+                images_1:response_images[0].url,
+                images_2:response_images[1].url,
+                images_3:response_images[2].url,
+                images_4:response_images[3].url,
+                images_5:response_images[4].url,
+                images_6:response_images[5].url,
+                images_7:response_images[6].url,
+                images_8:response_images[7].url
+              });
+
+              await newCat.save();
+
+              break; // 
+            } else {
+              xd = xd + 1;
+              console.log("No hubo imagen ni gato: ", breed.name)
+            }
+    
     
           } catch (error) {
             console.error("Error al obtener la imagen. Intento:", retries + 1);
@@ -48,32 +97,8 @@ connectDB().then(() => {
           }
         }
 
-        if (image) {
-          const newCat = new Cat({
-            id: breed.id,
-            name: breed.name,
-            cfa_url: breed.cfa_url,
-            description: breed.description,
-            temperament: breed.temperament,
-            origin: breed.origin,
-            life_span: breed.life_span,
-            adaptability: breed.adaptability,
-            affection_level: breed.affection_level,
-            child_friendly: breed.child_firendly,
-            grooming: breed.grooming,
-            inteligence: breed.inteligence,
-            health_issues: breed.health_issues,
-            social_needs: breed.social_needs,
-            stranger_friendly: breed.stranger_friendly,
-            reference_image_id: breed.reference_image_id,
-            image_url: image.url
-          });
 
-          await newCat.save();
-        } else {
-          xd = xd + 1;
-          console.log("No hubo imagen ni gato: ", breed.name)
-        }
+
 
       }
       
