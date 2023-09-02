@@ -52,7 +52,7 @@ connectDB().then(() => {
             
             console.log("image url: ",image.url);
 
-            if (image && (response_images.length >= 8)) {
+            if (image) {
               const newCat = new Cat({
                 id: breed.id,
                 name: breed.name,
@@ -65,20 +65,20 @@ connectDB().then(() => {
                 affection_level: breed.affection_level,
                 child_friendly: breed.child_friendly,
                 grooming: breed.grooming,
-                inteligence: breed.inteligence,
+                intelligence: breed.intelligence,
                 health_issues: breed.health_issues,
                 social_needs: breed.social_needs,
                 stranger_friendly: breed.stranger_friendly,
                 reference_image_id: breed.reference_image_id,
                 image_url: image.url,
-                images_1:response_images[0].url,
-                images_2:response_images[1].url,
-                images_3:response_images[2].url,
-                images_4:response_images[3].url,
-                images_5:response_images[4].url,
-                images_6:response_images[5].url,
-                images_7:response_images[6].url,
-                images_8:response_images[7].url
+                images_1:(response_images.length > 0)? response_images[0].url : null,
+                images_2:(response_images.length > 1)? response_images[1].url : null,
+                images_3:(response_images.length > 2)? response_images[2].url : null,
+                images_4:(response_images.length > 3) ? response_images[3].url : null,
+               images_5:(response_images.length > 4) ? response_images[4].url : null,
+                images_6:(response_images.length > 5) ? response_images[5].url : null,
+                images_7:(response_images.length > 6) ? response_images[6].url : null,
+                images_8:(response_images.length > 7)  ? response_images[7].url : null
               });
 
               await newCat.save();

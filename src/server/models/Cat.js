@@ -12,7 +12,7 @@ const catSchema = new mongoose.Schema({
     affection_level: String,
     child_friendly: String,
     grooming: String,
-    inteligence: String,
+    intelligence: String,
     health_issues: String,
     social_needs: String,
     stranger_friendly: String,

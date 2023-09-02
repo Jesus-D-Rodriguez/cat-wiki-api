@@ -24,6 +24,7 @@
 
   #photos-2 {
     align-items: flex-start;
+    justify-content: space-evenly;
   }
 
   .container-1-container {
@@ -39,6 +40,8 @@
   .traits {
     display: inline;
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .trait {
@@ -47,6 +50,11 @@
 
   .container-1-traits {
     text-align: left;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
   }
 
   .bar {
@@ -56,3 +64,55 @@
     border-radius: 5px; /* Ajusta el valor para redondear los bordes */
     display: inline-block;
   }
+
+  .bar-filled {
+    background-color: #544439;
+  }
+
+  .bar-empty {
+    background-color: #E0E0E0;
+  }
+
+
+  .bar-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea a la izquierda */
+  }
+
+ .wiki {
+  height: 250px;
+  width: 250px;
+  }
+
+  .trait-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bars {
+    margin-right: 8%;
+  }
+
+
+
+  #img-wiki {
+    position: relative;
+  }
+
+  #img-wiki::before {
+    content: "";
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /*border-radius: 10px; */ /* Puedes ajustar el valor para obtener el redondeo deseado */
+    background-color:#DEC68B; /* Color de fondo opcional para visualizar mejor el div */
+     /* Agregar espaciado interno opcional para separar el contenido del borde */
+    width: 10px;
+    height: 180px;
+    right: 100%;
+    top: 45px;
+
+
+}
