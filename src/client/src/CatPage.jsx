@@ -84,9 +84,9 @@ function CatPage (props) {
                         <h2>{catData.name}</h2>
                         <p>{catData.description}</p>
                        
-                       <div><p className="traits"> Temperament:</p> {catData.temperament} <p className="trait"> </p></div>
-                        <div><p className="traits">Origin:</p> <p className="trait">{catData.origin}</p></div>
-                        <div><p className="traits">Life Span:</p> <p className="trait">{catData.life_span} years</p></div>
+                       <div><p className="traits"> Temperament: </p> &nbsp; <p className="trait">{catData.temperament}</p></div>
+                        <div><p className="traits">Origin:</p> &nbsp; <p className="trait">{catData.origin}</p></div>
+                        <div><p className="traits">Life Span:</p> &nbsp; <p className="trait">{catData.life_span} years</p></div>
                         <div className="trait-line"><p className="traits">Adaptability:</p>  <div className="bars"> {renderBars(catData.adaptability)}</div>   </div>
                         <div className="trait-line"><p className="traits">Affection level:</p>  <div className="bars">  {renderBars(catData.affection_level)} </div> </div>
                         <div className="trait-line"><p className="traits">Child friendly:</p> <div className="bars"> {renderBars(catData.child_friendly)}</div> </div> 
@@ -107,7 +107,7 @@ function CatPage (props) {
                 <h2>Other photos</h2>
             </div>
             
-            <div className="container-2-photos-row">
+            <div className="container-2-photos-row" id="photos-1">
             { catData.images_1 && <div className="img-container wiki" id="left">
 
                         <img src={catData.images_1} alt="" />
@@ -132,7 +132,7 @@ function CatPage (props) {
             </div>
             <div className="container-2-photos-row" id="photos-2" style={{ justifyContent: catData.images_8 ? 'space-between' : 'space-evenly' }}>
 
-            
+
             {catData.images_5 && <div className="img-container wiki" id="left">
 
                         <img src={catData.images_5} alt="" />
@@ -144,16 +144,17 @@ function CatPage (props) {
 
                         
                     </div>}
-                  
-                
-                    {catData.images_7 && <div className="img-container wiki" id="left">
+
+         
+                    {catData.images_7 && <div className="img-container wiki" id="wiki-left">
                         <img src={catData.images_7} alt="" />
 
                     </div>}
-                    {catData.images_8 && <div className="img-container wiki" id="right">
+                    {catData.images_8 && <div className="img-container wiki" id="wiki-right">
                         <img src={catData.images_8} alt="" />
-
                     </div>}
+
+        
         </div>
         </div>
             <Bottom></Bottom>
