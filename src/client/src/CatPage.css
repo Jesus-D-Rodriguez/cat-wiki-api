@@ -473,3 +473,140 @@
 }
 
 }
+
+
+@media(max-width: 515px) {
+  .bar {
+    width: 45px;
+}
+
+.wiki img {
+  height: 190px;
+  width: 190px;
+}
+
+
+#container-cat-page {
+  min-height: 1900px;
+}
+
+
+#photos-1 {
+  min-height: 500px;
+}
+
+#img-wiki {
+  height: 280px;
+  width: 280px;
+}
+
+.container-1-traits p {
+  font-size: 0.85rem;
+}
+
+}
+
+@media(max-widtH: 480px) {
+  #container-cat-page {
+    min-height: 1750px;
+}
+
+#photos-1 {
+  min-height: 490px;
+}
+
+#img-wiki {
+  height: 265px;
+  width: 265px;
+}
+
+
+#img-wiki img {
+  height: 265px;
+  width: 265px;
+}
+
+.container-1-traits h2 {
+  font-size: 1.25rem;
+  margin-top: 10%;
+}
+
+.container-2-text-row h2 {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+#img-wiki::before {
+  height: 225px;
+  width: 5.5px;
+}
+
+}
+
+@media(max-width:465px) {
+  .wiki {
+    height: 160px;
+    width: 160px;
+}
+
+#photos-2 {
+  height: 35vh;
+  min-height: 442px;
+}
+
+#photos-1 {
+  min-height: 460px;
+}
+
+.wiki img {
+  height: 175px;
+  width: 175px;
+}
+
+}
+
+@media(max-width: 445px) {
+  #photos-2 {
+    height: 35vh;
+    min-height: 340px;
+}
+
+#photos-1 {
+  min-height: 420px;
+}
+
+.wiki img {
+  height: 165px;
+  width: 165px;
+}
+
+.wiki {
+height: 165px;
+width: 165px;
+}
+
+.bar {
+  width: 38px;
+}
+
+}
+
+
+@media (max-width: 400px ) {
+  .container-2-other-photos {
+    margin-top: 10%;
+}
+#container-cat-page {
+  min-height: 1650px;
+}
+
+#photos-1 {
+  min-height: 392px;
+}
+
+.bar {
+  width: 33px;
+}
+
+}
