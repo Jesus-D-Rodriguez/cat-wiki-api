@@ -10,6 +10,10 @@
     color:  #291507;
 }
 
+.most-searched-container a h2 {
+    color:  #213547;
+}
+
 #container-most-searched {
     grid-template-rows: 100%;
     min-height: 3080px;
