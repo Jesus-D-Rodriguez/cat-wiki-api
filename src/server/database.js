@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
+
+  const uri = "mongodb+srv://root:1234@cat-wiki-db.axsvspt.mongodb.net/?retryWrites=true&w=majority";
+  const uri2 = 'mongodb://127.0.0.1:27017/cat-wiki';
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/cat-wiki', {
+    await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
