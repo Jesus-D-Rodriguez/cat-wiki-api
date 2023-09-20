@@ -1,11 +1,14 @@
 import React from "react";
 import "./Bottom.css"
+import { v4 as uuidv4 } from 'uuid';
 
 function Bottom () {
-    return <div className="bottom">
+    const uniqueId = uuidv4();
+    return <div className="bottom" id="boton">
         <div className="bottom-container">
             <div className="bottom-line">
-                <img src="../images/CatwikiLogo.svg" alt="" />
+                <a href="/"> <img src="../images/CatwikiLogo.svg" alt="" /> </a>
+                
 
             
 

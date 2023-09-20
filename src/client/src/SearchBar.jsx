@@ -45,9 +45,14 @@ function SearchBar() {
 
   const handleOptionSelect = (event, selectedOption) => {
     if (selectedOption) {
-      // Redirect using useNavigate
-      navigate(`/cat/${encodeURIComponent(selectedOption)}`);
-      console.log( "Selected: " + selectedOption);
+      axios.put(`http://localhost:3000/incrementSearchCount/${encodeURIComponent(selectedOption)}`)
+        .then(response => {
+          // Si la solicitud fue exitosa, redirige a la página del gato
+          navigate(`/cat/${encodeURIComponent(selectedOption)}`);
+        })
+        .catch(error => {
+          console.error('Error al incrementar searchCount:', error);
+        });
     }
   };
 

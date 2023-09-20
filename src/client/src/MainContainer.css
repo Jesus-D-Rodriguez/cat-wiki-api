@@ -251,8 +251,10 @@
 
 }
 
-.main-cat-container-most-searched {
+.main-cat-container-most-searched, a p {
     color: #291507;
+    font-weight: 600;
+
 }
 
 @media (max-width: 1700px) {

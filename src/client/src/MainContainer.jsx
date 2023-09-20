@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect }  from "react";
 import "./MainContainer.css"
 import SearchBar from "./SearchBar";
+import axios from "axios";
 import Autocomplete from '@mui/material/Autocomplete';
 
 function MainContainer () {
     const options = ['Option 1', 'Option 2'];
+    const [mostSearchedCats, setMostSearchedCats] = useState([]);
+
+    useEffect(() => {
+      axios.get('http://localhost:3000/most_searched')
+        .then(response => {
+          setMostSearchedCats(response.data);
+          console.log("Most searched ", response.data);
+        })
+        .catch(error => {
+          console.error('Error al obtener los gatos más buscados:', error);
+        });
+    }, []);
     return <div className="main-cat-container">
         <div className="main-cat-container-img">
             <div className="main-cat-container-img-1">
@@ -44,7 +57,7 @@ function MainContainer () {
                     </div>
               
                     <div className="see-more">
-                        <a href="#">
+                        <a href="/most_searched">
                         <div className="see-more-2">
                             <p>SEE MORE</p> <img src="../images/arrow-right-alt_117700.svg" alt=""/> 
                         </div>
@@ -60,24 +73,24 @@ function MainContainer () {
                     
                     <div className="img-container" id="left">
                         <div id="first-image">
-                        <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" alt="" />
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[0].image_url} alt="" />
                         </div>
-                        <p>Bengal</p>
+                        <a href={`/cat/${mostSearchedCats.length > 0 && mostSearchedCats[0].name}`}> <p>{mostSearchedCats.length > 0 && mostSearchedCats[0].name}</p> </a>
                     </div>
                     <div className="img-container" id="right">
-                        <img src="https://cdn2.thecatapi.com/images/9ha.jpg" alt="" />
-                        <p>Savannah</p>
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[1].image_url} alt="" />
+                        <a href={`/cat/${mostSearchedCats.length > 0 && mostSearchedCats[1].name}`}> <p>{mostSearchedCats.length > 0 && mostSearchedCats[1].name}</p> </a>
                         
                     </div>
                   
                 
                     <div className="img-container" id="left">
-                        <img src="https://cdn2.thecatapi.com/images/cko.jpg" alt="" />
-                        <p>Norwegian Forest Cat</p>
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[2].image_url} alt="" />
+                        <a href={`/cat/${mostSearchedCats.length > 0 && mostSearchedCats[2].name}`}> <p>{mostSearchedCats.length > 0 && mostSearchedCats[2].name}</p> </a>
                     </div>
                     <div className="img-container" id="right">
-                        <img src="https://cdn2.thecatapi.com/images/251.jpg" alt="" />
-                        <p>Selkirk Rex</p>
+                        <img src={mostSearchedCats.length > 0 && mostSearchedCats[3].image_url} alt="" />
+                        <a href={`/cat/${mostSearchedCats.length > 0 && mostSearchedCats[3].name}`}> <p>{mostSearchedCats.length > 0 && mostSearchedCats[3].name}</p> </a>
                     </div>
            
                     

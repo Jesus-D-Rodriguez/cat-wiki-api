@@ -25,7 +25,11 @@ const catSchema = new mongoose.Schema({
     images_5: String,
     images_6: String,
     images_7: String,
-    images_8: String
+    images_8: String,
+    search_count: {
+        type: Number,
+        default: 0 // Valor inicial en 0
+    }
 })
 
 const Cat = mongoose.model("Cat", catSchema);

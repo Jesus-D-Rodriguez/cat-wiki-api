@@ -17,3 +17,8 @@
     width: 85%;
     height: auto;
 }
+
+.logo-container a {
+    display: contents;
+    width: fit-content;
+}

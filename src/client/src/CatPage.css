@@ -454,7 +454,7 @@
   }
 
   #photos-1 {
-    min-height: 540px;
+    min-height: 545px;
 }
 }
 
@@ -480,6 +480,10 @@
     width: 45px;
 }
 
+#photos-1 {
+  min-height: 508px;
+}
+
 .wiki img {
   height: 190px;
   width: 190px;
@@ -491,9 +495,6 @@
 }
 
 
-#photos-1 {
-  min-height: 500px;
-}
 
 #img-wiki {
   height: 280px;
@@ -607,6 +608,35 @@ width: 165px;
 
 .bar {
   width: 33px;
+}
+
+}
+
+
+@media(max-widtH: 385px) {
+  .wiki {
+    height: 145px;
+    width: 145px;
+}
+
+.wiki img {
+  height: 145px;
+  width: 145px;
+}
+.bar {
+  width: 28px;
+}
+
+#container-cat-page {
+  min-height: 1550px;
+}
+
+.container-2-other-photos {
+  margin-top: 25%;
+}
+
+#photos-1 {
+  min-height: 360px;
 }
 
 }

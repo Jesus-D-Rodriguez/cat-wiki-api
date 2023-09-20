@@ -7,7 +7,7 @@
     align-items: flex-end;
 }
 
-.bottom-container {
+.bottom-container  {
     display: flex;
     width: 87.5%;
     height: 80%;
@@ -20,7 +20,15 @@
     display: inline-block;
     vertical-align: middle;
     max-height: 55px;
+    width: 10vw;
+    max-height: 4vh ;
+    max-width: 150px;
 
+}
+
+.bottom-container a {
+    width: min-content;
+    max-width: 200px;
 }
 
 .bottom-container p {
@@ -53,6 +61,10 @@
 }
 
 @media (max-width: 1700px) {
+
+    .bottom-container img {
+        width: 15vw;
+    }
     .bottom-line p {
         font-size: 1rem;
     }
