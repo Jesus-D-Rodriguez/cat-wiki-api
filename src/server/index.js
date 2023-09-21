@@ -30,7 +30,8 @@ connectDB().then(() => {
       const retryDelay = 1000;
       if (breed.reference_image_id) {
         let retries = 0;
-
+        const existingCats = await Cat.find();
+        if (existingCats.length == 0) {
         
         while (retries < maxRetries) {
           try {
@@ -98,7 +99,7 @@ connectDB().then(() => {
         }
 
 
-
+      }
 
       }
       
