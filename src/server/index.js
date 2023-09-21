@@ -7,7 +7,7 @@ const axios = require("axios");
 const Cat = require("../server/models/Cat.js")
 
 const corsOptions = {
-  origin: 'http://localhost:5173', // Cambia esto con el origen de tu aplicación
+  origin: 'https://cat-wiki-zlzc.onrender.com/', // Cambia esto con el origen de tu aplicación
 };
 
 app.use(cors(corsOptions));
