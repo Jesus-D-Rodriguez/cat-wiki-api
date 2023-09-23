@@ -12,6 +12,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+const xd = "xd";
+
 app.use(require('./routes/routes.js'));
 
 /*app.get('/', (req, res) => {
