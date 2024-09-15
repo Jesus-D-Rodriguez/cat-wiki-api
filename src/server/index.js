@@ -11,6 +11,7 @@ const local = 'http://localhost:5173';
 
 const corsOptions = {
   origin: url, 
+  
 
 };
 
