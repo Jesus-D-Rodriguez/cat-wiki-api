@@ -10,7 +10,7 @@ const url = 'https://cat-wiki-zlzc.onrender.com';
 const local = 'http://localhost:5173';
 
 const corsOptions = {
-  origin: local, 
+  origin: url, 
 
 };
 
